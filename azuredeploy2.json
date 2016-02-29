@@ -69,12 +69,14 @@
             "type": "Microsoft.Web/serverfarms",
             "name": "[parameters('hostingPlanName')]",
             "location": "[resourceGroup().location]",
+            "sku": {
+                "tier": "Standard: 1 Small",
+                "name": "f1",
+                "capacity": 0
+            },
             "properties": {
-		"name": "[parameters('hostingPlanName')]",
-		"sku": "[parameters('sku')]",
-		"workerSize": "[parameters('workerSize')]",
-		"numberOfWorkers": 1
-	      }
+                "numberOfWorkers": 1
+            }
     },
     {
       "apiVersion": "2015-08-01",
