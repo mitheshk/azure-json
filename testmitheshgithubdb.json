@@ -45,6 +45,18 @@
         "description": "The instance size of the hosting plan (small, medium, or large)."
       }
     },
+    "serverName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the new database server to create."
+      }
+    },
+    "serverLocation": {
+      "type": "string",
+      "metadata": {
+        "description": "The location of the database server. For best performance, this location should be the same as the location of the web app."
+      }
+    },
     "administratorLogin": {
       "type": "string",
       "metadata": {
