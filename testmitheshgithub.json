@@ -71,6 +71,12 @@
         "description": "The location of the database server. For best performance, this location should be the same as the location of the web app."
       }
     },
+    "administratorLogin": {
+      "type": "string",
+      "metadata": {
+        "description": "The account name to use for the database server administrator."
+      }
+    },
     "administratorLoginPassword": {
       "type": "securestring",
       "metadata": {
